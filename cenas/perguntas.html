@@ -1,0 +1,26 @@
+<div id="cenas_perguntas">
+</br>
+<h1 id="letraAtual" class="letraAtual center-text"></h1>
+
+<div class="center-vertical">
+    <div class="center-text center-vertical-item">
+        <h2 class="pergunta"></h2>
+
+        <form onsubmit="submitFormPerguntas(this)" id="formPerguntas" class="form-inline form-perguntas" autocomplete="off">
+            <div class="form-group">
+              <label for="resposta" class="sr-only">Digite sua resposta aqui!</label>
+              <input type="text" class="form-control" id="resposta" name="resposta" placeholder="Digite sua resposta aqui!" autocomplete="off">
+
+              <button type="submit" class="btn btn-stopstop"><i class="fas fa-arrow-right"></i></button>
+            </div>
+          </form>
+
+    </div>
+</div>
+</div>
+
+<script>
+  $(document).ready(function () {
+    $("#cenas_perguntas .pergunta").html();
+  });
+  </script>

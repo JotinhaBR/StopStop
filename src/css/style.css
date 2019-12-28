@@ -1,0 +1,104 @@
+body {
+    background: #f86d6d;
+}
+
+p, span, h1, h2, h3, h4, h5 ,h6, div {
+    color: #fff;
+}
+
+.logotipo {
+    width: 30vh;
+}
+
+.versao {
+    position: fixed;
+    bottom: 0;
+    margin-left: 25px;
+    color: #fff;
+    font-size: large;
+}
+
+.center-text{
+    text-align: center;
+}
+
+.center-vertical{
+    display: block;
+}
+
+.center-vertical-item{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.form-linguas{
+    margin-top: 10px;
+    background-color: #f8a06d;
+    color: #fff;
+    border: none;
+    width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-linguas:focus {
+    background-color: #ce855b;
+    color: #fff;
+}
+
+.btn-jogar{
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.btn-stopstop{
+    background-color: #f8a06d;
+    color: #fff;
+    border: none;
+}
+
+.btn-stopstop:active, .btn-stopstop:focus, .btn-stopstop:hover{
+    background-color: #ce855b;
+    color: #fff;
+}
+
+button:focus, select:focus, input:focus {
+    outline: 0!important;
+    box-shadow: 0 0 0 0.1rem rgba(0,0,0,.15)!important;
+}
+
+#modal_carregando{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.50);
+}
+
+#modal_erro{
+    width: 100vw;
+    height: 100vh;
+    background-color: #f86d6d
+}
+
+.letraAtual{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    border-radius: 50%;
+    width: 66px;
+    height: 66px;
+    padding: 8px;
+    border: 2px solid #fff;
+    color: #fff;
+    text-align: center;
+}
+
+.form-perguntas #resposta{
+    width: 38vw;
+    display: inline-block;
+    margin-right: 1vw;
+}
