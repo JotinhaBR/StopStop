@@ -13,7 +13,7 @@ function modalAtivar(nome) {
     return new Promise((resolve) => {
         $(document).ready(function () {
             $("#modal_" + nome).remove();
-            getHTML('../../layout/' + nome + '.html').then((res) => {
+            getHTML(config.front.host+'/layout/' + nome + '.html').then((res) => {
                 $("body").append(res);
                 $("#modal_" + nome).modal("show");
                 $("#modal_" + nome).addClass("animated fadeIn");
