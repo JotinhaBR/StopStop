@@ -3,6 +3,14 @@ async function clickRedirect(url) {
     window.location.href = url;
 }
 
+async function mudarCena(nome, body = "body"){
+    await modalAtivar("carregando");
+    var res = await getHTML(global.config.front.host+'/cenas/'+nome+'.html');
+    await modalDesAtivar("carregando");
+    $(body).html(res);
+    return;
+}
+
 function letraRandom() {
     var letra = Array("A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "U", "V", "W", "X", "Y", "Z");
     var numero = Math.floor(Math.random() * letra.length);
@@ -13,7 +21,7 @@ function modalAtivar(nome) {
     return new Promise((resolve) => {
         $(document).ready(function () {
             $("#modal_" + nome).remove();
-            getHTML(config.front.host+'/modals/' + nome + '.html').then((res) => {
+            getHTML(global.config.front.host+'/modals/' + nome + '.html').then((res) => {
                 $("body").append(res);
                 $("#modal_" + nome).modal("show");
                 $("#modal_" + nome).addClass("animated fadeIn");

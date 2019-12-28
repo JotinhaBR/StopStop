@@ -1,34 +1,20 @@
-var letraAtualDoJogo = "A";
-var intervalLetrasRandom;
-
-modalAtivar("carregando").then(() => {
-    getHTML(config.front.host+'/cenas/inicio.html').then((res) => {
-        modalDesAtivar("carregando").then(()=>{
-            $("body").html(res);
-        })
-    });
+mudarCena('inicio').then(()=>{
+    $("#cenas_inicio .versao").html("V "+global.config.versao);
 });
 
 
-
-
 async function clickJogar() {
-    await modalAtivar("carregando");
-    letraAtualDoJogo = letraRandom();
-    
-    var res = await getHTML(config.front.host+'/cenas/letrasRandom.html');
-    await modalDesAtivar("carregando");
-    $("body").html(res);
+    global.jogo.letraAtualDoJogo = letraRandom();
+    await mudarCena('letrasRandom');
 
     setTimeout(async () => {
-        clearInterval(intervalLetrasRandom);
-        $("#randomLetras").html(letraAtualDoJogo);
+        clearInterval(global.jogo.intervalLetrasRandom);
+        $("#randomLetras").html(global.jogo.letraAtualDoJogo);
         $("#randomLetras").addClass("letraAtual");
         setTimeout(async () => {
-            var res = await getHTML(config.front.host+'/cenas/perguntas.html');
-            $("body").html(res);
+            await mudarCena('perguntas');
             $("#cenas_perguntas .pergunta").html("Nome");
-            $("#letraAtual").html(letraAtualDoJogo);
+            $("#letraAtual").html(global.jogo.letraAtualDoJogo);
         }, 1000);
     }, 3000);
 }

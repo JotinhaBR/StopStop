@@ -98,7 +98,7 @@ button:focus, select:focus, input:focus {
 }
 
 .form-perguntas #resposta{
-    width: 38vw;
+    width: 37vw;
     display: inline-block;
     margin-right: 1vw;
 }
