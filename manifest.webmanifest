@@ -1,0 +1,22 @@
+{
+	"dir" : "ltr",
+	"lang" : "pt-br",
+	"name" : "StopStop - Seu jogo de stop!",
+	"scope" : "/StopStop/",
+	"display" : "browser",
+	"start_url" : "https://jotinhabr.github.io/StopStop/",
+	"short_name" : "StopStop",
+	"theme_color" : "#f86d6d",
+	"description" : "Seu jogo de stop!",
+	"orientation" : "any",
+	"background_color" : "#f86d6d",
+	"related_applications" : "",
+	"prefer_related_applications" : "false",
+	"icons" : [
+		{
+			"src": "https://jotinhabr.github.io/StopStop/src/img/logotipo.png",
+			"sizes": "200x209"
+		}],
+	"screenshots" : [],
+	"generated" : "true"
+}

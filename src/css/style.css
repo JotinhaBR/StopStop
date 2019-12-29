@@ -77,16 +77,16 @@ button:focus, select:focus, input:focus {
     background-color: rgba(0, 0, 0, 0.50);
 }
 
-#modal_erro{
+#cenas_erro{
     width: 100vw;
     height: 100vh;
-    background-color: #d64444
+    background: #d64444
 }
 
-#modal_acertou{
+#cenas_acertou{
     width: 100vw;
     height: 100vh;
-    background-color: #5ccc58
+    background: #5ccc58
 }
 
 .letraAtual{

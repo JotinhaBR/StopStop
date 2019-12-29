@@ -23,12 +23,10 @@ async function submitFormPerguntas(shelf) {
                     // Clicou em não sei, passando pra proxima pergunta
                     global.jogo.pontosAtual = global.jogo.pontosAtual + 1;
 
-                    $("body").html("");
-                    await modalAtivar("acertou");
-                    $("#modal_acertou h1").html("Passou");
-                    $("#modal_acertou p").html("Você escolheu a saída mais fácil, vamo pra próxima pergunta !");
+                    await mudarCena("acertou");
+                    $("#cenas_acertou h1").html("Passou");
+                    $("#cenas_acertou p").html("Você escolheu a saída mais fácil, vamo pra próxima pergunta !");
                     setTimeout(async () => {
-                        await modalDesAtivar("acertou");
                         await mudarCena('perguntas');
                     }, 1000);
                     return;
@@ -45,35 +43,33 @@ async function submitFormPerguntas(shelf) {
                         // Acertou indo para procima pergunta.
                         global.jogo.pontosAtual = global.jogo.pontosAtual + 10;
 
-                        $("body").html("");
-                        await modalAtivar("acertou");
-                        $("#modal_acertou h1").html("Booaaa");
-                        $("#modal_acertou p").html("Você acertou, booaaa, vamo pra próxima pergunta !");
+                        await mudarCena("acertou");
+                        $("#cenas_acertou h1").html("Booaaa");
+                        $("#cenas_acertou p").html("Você acertou, booaaa, vamo pra próxima pergunta !");
                         setTimeout(async () => {
-                            await modalDesAtivar("acertou");
                             await mudarCena('perguntas');
                         }, 1000);
                         return;
                     } else {
                         // erro não esperado
                         console.log(formData, global);
-                        await modalAtivar("erro");
-                        $("#modal_erro h1").html("Erro inesperado");
-                        $("#modal_erro p").html("Parece que ocorreu um erro inesperado em nosso código, deixe o desenvolvedor saber o que aconteceu.");
-                        $("#modal_erro .conteudoAdd").html('<button onclick=\'mudarCena("inicio")\' type="button" class="btn btn-stopstop">Voltar ao Início</button>');
+                        await mudarCena("erro");
+                        $("#cenas_erro h1").html("Erro inesperado");
+                        $("#cenas_erro p").html("Parece que ocorreu um erro inesperado em nosso código, deixe o desenvolvedor saber o que aconteceu.");
+                        $("#cenas_erro .conteudoAdd").html('<button onclick=\'mudarCena("inicio")\' type="button" class="btn btn-stopstop">Voltar ao Início</button>');
                     }
             } else {
                 // errou
-                await modalAtivar("erro");
-                $("#modal_erro h1").html("Errrrouu");
-                $("#modal_erro p").html("Parece que essa resposta não começa com a letra " + global.jogo.letraAtualDoJogo + ".");
-                $("#modal_erro .conteudoAdd").html('<button onclick=\'mudarCena("inicio")\' type="button" class="btn btn-stopstop">Voltar ao Início</button>');
+                await mudarCena("erro");
+                $("#cenas_erro h1").html("Errrrouu");
+                $("#cenas_erro p").html("Parece que essa resposta não começa com a letra " + global.jogo.letraAtualDoJogo + ".");
+                $("#cenas_erro .conteudoAdd").html('<button onclick=\'mudarCena("inicio")\' type="button" class="btn btn-stopstop">Voltar ao Início</button>');
             }
     } else {
         // errouu
-        await modalAtivar("erro");
-        $("#modal_erro h1").html("Errrrouu");
-        $("#modal_erro p").html("Essa resposta está muito curta.");
-        $("#modal_erro .conteudoAdd").html('<button onclick=\'mudarCena("inicio")\' type="button" class="btn btn-stopstop">Voltar ao Início</button>');
+        await mudarCena("erro");
+        $("#cenas_erro h1").html("Errrrouu");
+        $("#cenas_erro p").html("Essa resposta está muito curta.");
+        $("#cenas_erro .conteudoAdd").html('<button onclick=\'mudarCena("inicio")\' type="button" class="btn btn-stopstop">Voltar ao Início</button>');
     }
 }

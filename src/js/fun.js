@@ -23,8 +23,10 @@ function modalAtivar(nome) {
             $("#modal_" + nome).remove();
             getHTML(global.config.front.host + '/modals/' + nome + '.html').then((res) => {
                 $("body").append(res);
-                $("#modal_" + nome).modal("show");
-                $("#modal_" + nome).addClass("animated fadeIn");
+                setTimeout(() => {
+                    $("#modal_" + nome).modal("show");
+                    $("#modal_" + nome).addClass("animated fadeIn");
+                }, 500);
                 resolve();
             });
         });
