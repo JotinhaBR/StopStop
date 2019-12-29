@@ -3,9 +3,9 @@ async function clickRedirect(url) {
     window.location.href = url;
 }
 
-async function mudarCena(nome, body = "body"){
+async function mudarCena(nome, body = "body") {
     await modalAtivar("carregando");
-    var res = await getHTML(global.config.front.host+'/cenas/'+nome+'.html');
+    var res = await getHTML(global.config.front.host + '/cenas/' + nome + '.html');
     await modalDesAtivar("carregando");
     $(body).html(res);
     return;
@@ -21,7 +21,7 @@ function modalAtivar(nome) {
     return new Promise((resolve) => {
         $(document).ready(function () {
             $("#modal_" + nome).remove();
-            getHTML(global.config.front.host+'/modals/' + nome + '.html').then((res) => {
+            getHTML(global.config.front.host + '/modals/' + nome + '.html').then((res) => {
                 $("body").append(res);
                 $("#modal_" + nome).modal("show");
                 $("#modal_" + nome).addClass("animated fadeIn");
@@ -34,15 +34,13 @@ function modalAtivar(nome) {
 function modalDesAtivar(nome) {
     return new Promise((resolve) => {
         $(document).ready(function () {
+            $("#modal_" + nome).addClass("animated fadeOut");
+            $(".modal-backdrop").addClass("animated fadeOut");
             setTimeout(() => {
-                $("#modal_" + nome).addClass("animated fadeOut");
-                $(".modal-backdrop").addClass("animated fadeOut");
-                setTimeout(() => {
-                    $("#modal_" + nome).modal("hide");
-                    $("#modal_" + nome).remove();
-                    $(".modal-backdrop").remove();
-                    resolve();
-                }, 1000);
+                $("#modal_" + nome).modal("hide");
+                $("#modal_" + nome).remove();
+                $(".modal-backdrop").remove();
+                resolve();
             }, 1000);
         });
     });

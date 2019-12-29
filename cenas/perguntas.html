@@ -6,12 +6,16 @@
     <div class="center-text center-vertical-item">
         <h2 class="pergunta"></h2>
 
-        <form onsubmit="submitFormPerguntas(this)" id="formPerguntas" class="form-inline form-perguntas" autocomplete="off">
-            <div class="form-group">
+        <form onsubmit="submitFormPerguntas(this)" action="javascript:submitFormPerguntas(this)" id="formPerguntas" class="form-perguntas" autocomplete="off">
+            <div class="form-group form-inline">
               <label for="resposta" class="sr-only">Digite sua resposta aqui!</label>
-              <input type="text" class="form-control" id="resposta" name="resposta" placeholder="Digite sua resposta aqui!" autocomplete="off">
+              <input type="text" class="form-control" id="resposta" name="resposta" placeholder="Digite sua resposta aqui!" autofocus="on" autocomplete="off">
 
               <button type="submit" class="btn btn-stopstop"><i class="fa fa-arrow-right"></i></button>
+            </div>
+
+            <div class="center-text">
+              <button type="button" onclick="submitFormPerguntasNaoSei(this)" class="btn btn-stopstop">Não sei, passo <i class="fa fa-arrow-right"></i></button>
             </div>
           </form>
 
@@ -21,6 +25,8 @@
 
 <script>
   $(document).ready(function () {
-    $("#cenas_perguntas .pergunta").html();
+    $("#cenas_perguntas .pergunta").html(global.jogo.perguntas[global.jogo.nPerguntaAtual]);
+    $("#letraAtual").html(global.jogo.letraAtualDoJogo);
+    $("#cenas_perguntas #resposta").focus();
   });
 </script>

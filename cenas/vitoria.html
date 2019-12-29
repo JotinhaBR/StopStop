@@ -1,0 +1,21 @@
+<div id="cenas_vitoria">
+  <div class="center-vertical">
+    <div class="center-text center-vertical-item">
+      <i class="fa fa-trophy fa-4x animated rotateInDownRight" style="color: #fff"></i>
+      <h1>Vitóriiaaaa!!!</h1>
+      <p>Você conseguiu acertar todas as perguntas, e ganhou <span id="pontos">0</span> pontos.</p>
+      <button onclick='mudarCena("inicio")' type="button" class="btn btn-stopstop">Voltar ao Início</button>
+      <div class="conteudoAdd"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+$(document).ready(function () {
+  $("#cenas_vitoria h1").html();
+  $("#cenas_vitoria p").html();
+  $("#cenas_vitoria #pontos").html(global.jogo.pontosAtual);
+  $("#cenas_vitoria .conteudoAdd").html();
+  global.jogo.pontosTotais = global.jogo.pontosTotais + global.jogo.pontosAtual;
+});
+</script>

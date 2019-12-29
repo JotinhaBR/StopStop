@@ -1,6 +1,4 @@
-mudarCena('inicio').then(()=>{
-    $("#cenas_inicio .versao").html("V "+global.config.versao);
-});
+mudarCena('inicio');
 
 
 async function clickJogar() {
@@ -13,8 +11,9 @@ async function clickJogar() {
         $("#randomLetras").addClass("letraAtual");
         setTimeout(async () => {
             await mudarCena('perguntas');
-            $("#cenas_perguntas .pergunta").html("Nome");
+            global.jogo.nPerguntaAtual = 0;
+            $("#cenas_perguntas .pergunta").html(global.jogo.perguntas[0]);
             $("#letraAtual").html(global.jogo.letraAtualDoJogo);
         }, 1000);
-    }, 3000);
+    }, 2000);
 }

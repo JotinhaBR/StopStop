@@ -1,12 +1,12 @@
 <div class="center-vertical">
     <div class="center-text center-vertical-item">
-        <h1>Sua letra é: </h1>
+        <h2>Sua letra é:</h2>
         <h1 id="randomLetras">A</h1>
     </div>
 </div>
 
 <script>
-    intervalLetrasRandom = setInterval(()=>{
+    global.jogo.intervalLetrasRandom = setInterval(()=>{
         $("#randomLetras").html(letraRandom());
     }, 100);
 </script>

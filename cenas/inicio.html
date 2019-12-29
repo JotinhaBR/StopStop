@@ -1,4 +1,8 @@
 <div id="cenas_inicio">
+    <div class="center-text">
+        <br/>
+        <span>Total de pontos: <span id="pontosTotais"> </span> </span>
+    </div>
     <div class="center-vertical">
         <div class="center-text center-vertical-item">
             <img class="logotipo" src="./src/img/logotipo.png" alt="Logotipo do StopStop" />
@@ -12,6 +16,11 @@
 
 <script>
     $(document).ready(function () {
-        $("#cenas_inicio .versao").html();
+        $("#cenas_inicio #pontosTotais").html(global.jogo.pontosTotais);
+        $("#cenas_inicio .versao").html("V " + global.config.versao);
+        global.jogo.intervalLetrasRandom = null;
+        global.jogo.letraAtualDoJogo = "A";
+        global.jogo.nPerguntaAtual = 0;
+        global.jogo.pontosAtual = 0;
     });
 </script>
