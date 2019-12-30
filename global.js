@@ -1,6 +1,6 @@
 var global = {
     config: {
-        versao: "1.0.3",
+        versao: "1.0.4",
         front: {
             host: "https://jotinhabr.github.io/StopStop"
             // host: "http://localhost:5500"
