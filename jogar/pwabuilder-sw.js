@@ -3,20 +3,20 @@
 const CACHE = "pwabuilder-precache";
 const precacheFiles = [
   /* Add an array of files to precache for your app */
-  "https://www.stopstop.planetsweb.com.br/jogar/index.html",
-  "https://www.stopstop.planetsweb.com.br/jogar/index.js",
-  "https://www.stopstop.planetsweb.com.br/jogar/global.js",
-  "https://www.stopstop.planetsweb.com.br/jogar/src/img/logotipo.png",
-  "https://www.stopstop.planetsweb.com.br/jogar/src/css/style.css",
-  "https://www.stopstop.planetsweb.com.br/jogar/src/js/fun.js",
-  "https://www.stopstop.planetsweb.com.br/jogar/modals/carregando.html",
-  "https://www.stopstop.planetsweb.com.br/jogar/cenas/acertou.html",
-  "https://www.stopstop.planetsweb.com.br/jogar/cenas/erro.html",
-  "https://www.stopstop.planetsweb.com.br/jogar/cenas/inicio.html",
-  "https://www.stopstop.planetsweb.com.br/jogar/cenas/letrasRandom.html",
-  "https://www.stopstop.planetsweb.com.br/jogar/cenas/perguntas.html",
-  "https://www.stopstop.planetsweb.com.br/jogar/cenas/perguntas.js",
-  "https://www.stopstop.planetsweb.com.br/jogar/cenas/vitoria.html"
+  "https://stopstop.planetsweb.com.br/jogar/index.html",
+  "https://stopstop.planetsweb.com.br/jogar/index.js",
+  "https://stopstop.planetsweb.com.br/jogar/global.js",
+  "https://stopstop.planetsweb.com.br/jogar/src/img/logotipo.png",
+  "https://stopstop.planetsweb.com.br/jogar/src/css/style.css",
+  "https://stopstop.planetsweb.com.br/jogar/src/js/fun.js",
+  "https://stopstop.planetsweb.com.br/jogar/modals/carregando.html",
+  "https://stopstop.planetsweb.com.br/jogar/cenas/acertou.html",
+  "https://stopstop.planetsweb.com.br/jogar/cenas/erro.html",
+  "https://stopstop.planetsweb.com.br/jogar/cenas/inicio.html",
+  "https://stopstop.planetsweb.com.br/jogar/cenas/letrasRandom.html",
+  "https://stopstop.planetsweb.com.br/jogar/cenas/perguntas.html",
+  "https://stopstop.planetsweb.com.br/jogar/cenas/perguntas.js",
+  "https://stopstop.planetsweb.com.br/jogar/cenas/vitoria.html"
 ];
 
 self.addEventListener("install", function (event) {
