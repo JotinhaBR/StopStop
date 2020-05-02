@@ -2,8 +2,8 @@ var global = {
     config: {
         versao: "1.0.4",
         front: {
-            // host: "https://www.stopstop.planetsweb.com.br/jogar"
-            host: "http://localhost:5500/jogar"
+            host: "https://www.stopstop.planetsweb.com.br/jogar"
+            // host: "http://localhost:5500/jogar"
         },
     },
     jogo: {
