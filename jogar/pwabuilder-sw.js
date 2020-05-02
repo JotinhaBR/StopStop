@@ -3,20 +3,20 @@
 const CACHE = "pwabuilder-precache";
 const precacheFiles = [
   /* Add an array of files to precache for your app */
-  "https://jotinhabr.github.io/StopStop/index.html",
-  "https://jotinhabr.github.io/StopStop/index.js",
-  "https://jotinhabr.github.io/StopStop/global.js",
-  "https://jotinhabr.github.io/StopStop/src/img/logotipo.png",
-  "https://jotinhabr.github.io/StopStop/src/css/style.css",
-  "https://jotinhabr.github.io/StopStop/src/js/fun.js",
-  "https://jotinhabr.github.io/StopStop/modals/carregando.html",
-  "https://jotinhabr.github.io/StopStop/cenas/acertou.html",
-  "https://jotinhabr.github.io/StopStop/cenas/erro.html",
-  "https://jotinhabr.github.io/StopStop/cenas/inicio.html",
-  "https://jotinhabr.github.io/StopStop/cenas/letrasRandom.html",
-  "https://jotinhabr.github.io/StopStop/cenas/perguntas.html",
-  "https://jotinhabr.github.io/StopStop/cenas/perguntas.js",
-  "https://jotinhabr.github.io/StopStop/cenas/vitoria.html"
+  "https://www.stopstop.planetsweb.com.br/jogar/index.html",
+  "https://www.stopstop.planetsweb.com.br/jogar/index.js",
+  "https://www.stopstop.planetsweb.com.br/jogar/global.js",
+  "https://www.stopstop.planetsweb.com.br/jogar/src/img/logotipo.png",
+  "https://www.stopstop.planetsweb.com.br/jogar/src/css/style.css",
+  "https://www.stopstop.planetsweb.com.br/jogar/src/js/fun.js",
+  "https://www.stopstop.planetsweb.com.br/jogar/modals/carregando.html",
+  "https://www.stopstop.planetsweb.com.br/jogar/cenas/acertou.html",
+  "https://www.stopstop.planetsweb.com.br/jogar/cenas/erro.html",
+  "https://www.stopstop.planetsweb.com.br/jogar/cenas/inicio.html",
+  "https://www.stopstop.planetsweb.com.br/jogar/cenas/letrasRandom.html",
+  "https://www.stopstop.planetsweb.com.br/jogar/cenas/perguntas.html",
+  "https://www.stopstop.planetsweb.com.br/jogar/cenas/perguntas.js",
+  "https://www.stopstop.planetsweb.com.br/jogar/cenas/vitoria.html"
 ];
 
 self.addEventListener("install", function (event) {

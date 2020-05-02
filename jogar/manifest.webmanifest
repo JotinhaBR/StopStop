@@ -4,7 +4,7 @@
 	"name" : "StopStop - Seu jogo de stop!",
 	"scope" : "/StopStop/",
 	"display" : "browser",
-	"start_url" : "https://jotinhabr.github.io/StopStop/",
+	"start_url" : "https://www.stopstop.planetsweb.com.br/jogar/",
 	"short_name" : "StopStop",
 	"theme_color" : "#f86d6d",
 	"description" : "Seu jogo de stop!",
@@ -14,7 +14,7 @@
 	"prefer_related_applications" : "false",
 	"icons" : [
 		{
-			"src": "https://jotinhabr.github.io/StopStop/src/img/logotipo.png",
+			"src": "https://www.stopstop.planetsweb.com.br/jogar/src/img/logotipo.png",
 			"sizes": "200x209"
 		}],
 	"screenshots" : [],
