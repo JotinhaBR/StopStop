@@ -1,6 +1,6 @@
 var global = {
     config: {
-        versao: "1.0.6",
+        versao: "1.0.7",
         precache: true,
         // precache: false,
         front: {
