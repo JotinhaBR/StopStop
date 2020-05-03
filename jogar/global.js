@@ -1,10 +1,11 @@
 var global = {
     config: {
-        versao: "1.0.5",
+        versao: "1.0.6",
         precache: true,
+        // precache: false,
         front: {
-            host: "https://stopstop.planetsweb.com.br/jogar"
-            // host: "http://localhost:5500/jogar"
+            // host: "https://stopstop.planetsweb.com.br/jogar"
+            host: "http://localhost:5500/jogar"
         },
     },
     jogo: {

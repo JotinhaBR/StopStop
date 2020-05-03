@@ -1,25 +1,31 @@
-// This is the service worker with the Cache-first network
+let global = new URL(location).searchParams.get('global');
+global = JSON.parse(atob(global));
 
+
+// This is the service worker with the Cache-first network
 const CACHE = "pwabuilder-precache";
 const precacheFiles = [];
 
-if(global.config.precache){
-precacheFiles = [
-  /* Add an array of files to precache for your app */
-  global.config.front.host + "/index.html",
-  global.config.front.host + "/index.js",
-  global.config.front.host + "/src/img/logotipo.png",
-  global.config.front.host + "/src/css/style.css",
-  global.config.front.host + "/src/js/fun.js",
-  global.config.front.host + "/modals/carregando.html",
-  global.config.front.host + "/cenas/acertou.html",
-  global.config.front.host + "/cenas/erro.html",
-  global.config.front.host + "/cenas/inicio.html",
-  global.config.front.host + "/cenas/letrasRandom.html",
-  global.config.front.host + "/cenas/perguntas.html",
-  global.config.front.host + "/cenas/perguntas.js",
-  global.config.front.host + "/cenas/vitoria.html"
-];
+/* Add an array of files to precache for your app */
+if (global.config.precache) {
+  precacheFiles.push(
+    global.config.front.host + "/index.html",
+    global.config.front.host + "/index.js",
+    global.config.front.host + "/src/img/logotipo.png",
+    global.config.front.host + "/src/css/style.css",
+    global.config.front.host + "/src/css/fw/animate.css",
+    global.config.front.host + "/src/css/fw/bootstrap.css",
+    global.config.front.host + "/src/css/fw/fontawesome-pro-5.12.0-web/css/all.min.css",
+    global.config.front.host + "/src/js/fun.js",
+    global.config.front.host + "/modals/carregando.html",
+    global.config.front.host + "/cenas/acertou.html",
+    global.config.front.host + "/cenas/erro.html",
+    global.config.front.host + "/cenas/inicio.html",
+    global.config.front.host + "/cenas/letrasRandom.html",
+    global.config.front.host + "/cenas/perguntas.html",
+    global.config.front.host + "/cenas/perguntas.js",
+    global.config.front.host + "/cenas/vitoria.html"
+  );
 }
 
 self.addEventListener("install", function (event) {
@@ -43,7 +49,7 @@ self.addEventListener("activate", function (event) {
 });
 
 // If any fetch fails, it will look for the request in the cache and serve it from there first
-self.addEventListener("fetch", function (event) { 
+self.addEventListener("fetch", function (event) {
   if (event.request.method !== "GET") return;
 
   event.respondWith(
