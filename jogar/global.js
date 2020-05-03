@@ -1,6 +1,7 @@
 var global = {
     config: {
-        versao: "1.0.4",
+        versao: "1.0.5",
+        precache: true,
         front: {
             host: "https://stopstop.planetsweb.com.br/jogar"
             // host: "http://localhost:5500/jogar"

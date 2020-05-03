@@ -81,10 +81,24 @@ button:focus, select:focus, input:focus {
     box-shadow: 0 0 0 0.1rem rgba(0,0,0,.15)!important;
 }
 
+.btn-passo{
+    font-size: 1.3em;
+}
+
+.btn-success{
+    background-color: #5ccc58
+}
+
 #modal_carregando{
     width: 100vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.50);
+}
+
+#cenas_passou{
+    width: 100vw;
+    height: 100vh;
+    background: #f8a06d
 }
 
 #cenas_erro{
@@ -97,6 +111,16 @@ button:focus, select:focus, input:focus {
     width: 100vw;
     height: 100vh;
     background: #5ccc58
+}
+
+#cenas_vitoria{
+    width: 100vw;
+    height: 100vh;
+    background: #f8a06d;
+}
+
+#cenas_vitoria .btn{
+    background: #f86d6d;
 }
 
 .letraAtual{

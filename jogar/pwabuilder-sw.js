@@ -1,23 +1,26 @@
 // This is the service worker with the Cache-first network
 
 const CACHE = "pwabuilder-precache";
-const precacheFiles = [
+const precacheFiles = [];
+
+if(global.config.precache){
+precacheFiles = [
   /* Add an array of files to precache for your app */
-  "https://stopstop.planetsweb.com.br/jogar/index.html",
-  "https://stopstop.planetsweb.com.br/jogar/index.js",
-  "https://stopstop.planetsweb.com.br/jogar/global.js",
-  "https://stopstop.planetsweb.com.br/jogar/src/img/logotipo.png",
-  "https://stopstop.planetsweb.com.br/jogar/src/css/style.css",
-  "https://stopstop.planetsweb.com.br/jogar/src/js/fun.js",
-  "https://stopstop.planetsweb.com.br/jogar/modals/carregando.html",
-  "https://stopstop.planetsweb.com.br/jogar/cenas/acertou.html",
-  "https://stopstop.planetsweb.com.br/jogar/cenas/erro.html",
-  "https://stopstop.planetsweb.com.br/jogar/cenas/inicio.html",
-  "https://stopstop.planetsweb.com.br/jogar/cenas/letrasRandom.html",
-  "https://stopstop.planetsweb.com.br/jogar/cenas/perguntas.html",
-  "https://stopstop.planetsweb.com.br/jogar/cenas/perguntas.js",
-  "https://stopstop.planetsweb.com.br/jogar/cenas/vitoria.html"
+  global.config.front.host + "/index.html",
+  global.config.front.host + "/index.js",
+  global.config.front.host + "/src/img/logotipo.png",
+  global.config.front.host + "/src/css/style.css",
+  global.config.front.host + "/src/js/fun.js",
+  global.config.front.host + "/modals/carregando.html",
+  global.config.front.host + "/cenas/acertou.html",
+  global.config.front.host + "/cenas/erro.html",
+  global.config.front.host + "/cenas/inicio.html",
+  global.config.front.host + "/cenas/letrasRandom.html",
+  global.config.front.host + "/cenas/perguntas.html",
+  global.config.front.host + "/cenas/perguntas.js",
+  global.config.front.host + "/cenas/vitoria.html"
 ];
+}
 
 self.addEventListener("install", function (event) {
   console.log("[PWA Builder] Install Event processing");

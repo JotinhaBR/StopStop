@@ -23,9 +23,9 @@ async function submitFormPerguntas(shelf) {
                     // Clicou em não sei, passando pra proxima pergunta
                     global.jogo.pontosAtual = global.jogo.pontosAtual + 1;
 
-                    await mudarCena("acertou");
-                    $("#cenas_acertou h1").html("Passou");
-                    $("#cenas_acertou p").html("Você escolheu a saída mais fácil, vamo pra próxima pergunta !");
+                    await mudarCena("passou");
+                    $("#cenas_passou h1").html("Passou");
+                    $("#cenas_passou p").html("Você escolheu a saída mais fácil, vamo pra próxima pergunta !");
                     setTimeout(async () => {
                         await mudarCena('perguntas');
                     }, 1000);
