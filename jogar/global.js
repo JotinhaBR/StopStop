@@ -4,8 +4,8 @@ var global = {
         precache: true,
         // precache: false,
         front: {
-            // host: "https://stopstop.planetsweb.com.br/jogar"
-            host: "http://localhost:5500/jogar"
+            host: "https://stopstop.planetsweb.com.br/jogar"
+            // host: "http://localhost:5500/jogar"
         },
     },
     jogo: {
