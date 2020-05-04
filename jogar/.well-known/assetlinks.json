@@ -1,0 +1,14 @@
+[{
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "web",
+      "site": "https://stopstop.planetsweb.com.br/jogar/"
+    }
+  },{
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.wStopStop_10041742",
+      "sha1_cert_fingerprints": ["90:F6:BF:32:4C:4A:C1:1C:FC:2F:EC:B9:CC:C6:23:BB:6F:40:DC:F3"]
+    }
+  }]

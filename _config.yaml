@@ -1,1 +1,1 @@
-include: [".htaccess", ".well-known/assetlinks.json"]
+include: [".htaccess", ".well-known/assetlinks.json", "jogar/.well-known/assetlinks.json"]
