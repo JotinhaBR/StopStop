@@ -7,7 +7,7 @@
   },{
     "relation": ["delegate_permission/common.handle_all_urls"],
     "target": {
-      "namespace": "android_app",
+      "namespace": "android",
       "package_name": "com.wStopStop_10041742",
       "sha256_cert_fingerprints": ["52:25:7A:04:92:3F:67:C6:9E:B8:37:5C:29:92:30:56:31:25:90:CC:4D:16:2F:3A:2C:77:8C:FE:AD:9F:A7:94"]
     }
