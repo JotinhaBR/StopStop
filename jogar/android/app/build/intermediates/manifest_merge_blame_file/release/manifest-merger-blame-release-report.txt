@@ -23,7 +23,7 @@
 23-->
 24<manifest xmlns:android="http://schemas.android.com/apk/res/android"
 25    package="com.wStopStop_10041742"
-26    android:versionCode="110"
+26    android:versionCode="109"
 27    android:versionName="1.0.9" >
 28
 29    <uses-sdk

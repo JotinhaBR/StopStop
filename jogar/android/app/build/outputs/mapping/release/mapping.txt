@@ -1,7 +1,7 @@
 # compiler: R8
 # compiler_version: 1.5.69
 # min_api: 19
-# pg_map_id: 26f3189
+# pg_map_id: 2529d07
 android.support.customtabs.ICustomTabsCallback -> a.a.a.a:
     void onMessageChannelReady(android.os.Bundle) -> a
     void onNavigationEvent(int,android.os.Bundle) -> a
@@ -3082,10 +3082,6 @@ androidx.browser.trusted.TrustedWebActivityDisplayMode -> b.c.c.h:
     android.os.Bundle toBundle() -> a
 androidx.browser.trusted.TrustedWebActivityDisplayMode$DefaultMode -> b.c.c.h$a:
     android.os.Bundle toBundle() -> a
-androidx.browser.trusted.TrustedWebActivityDisplayMode$ImmersiveMode -> b.c.c.h$b:
-    boolean mIsSticky -> a
-    int mLayoutInDisplayCutoutMode -> b
-    android.os.Bundle toBundle() -> a
 androidx.browser.trusted.TrustedWebActivityIntent -> b.c.c.i:
     android.content.Intent mIntent -> a
     android.content.Intent getIntent() -> a
@@ -3102,7 +3098,6 @@ androidx.browser.trusted.TrustedWebActivityIntentBuilder -> b.c.c.j:
     androidx.browser.trusted.TrustedWebActivityIntentBuilder setAdditionalTrustedOrigins(java.util.List) -> a
     androidx.browser.trusted.TrustedWebActivityIntentBuilder setColorScheme(int) -> a
     androidx.browser.trusted.TrustedWebActivityIntentBuilder setColorSchemeParams(int,androidx.browser.customtabs.CustomTabColorSchemeParams) -> a
-    androidx.browser.trusted.TrustedWebActivityIntentBuilder setDisplayMode(androidx.browser.trusted.TrustedWebActivityDisplayMode) -> a
     androidx.browser.trusted.TrustedWebActivityIntentBuilder setSplashScreenParams(android.os.Bundle) -> a
     android.net.Uri getUri() -> b
     androidx.browser.trusted.TrustedWebActivityIntentBuilder setNavigationBarColor(int) -> b
@@ -5663,19 +5658,17 @@ com.google.androidbrowserhelper.trusted.LauncherActivity -> com.google.androidbr
     com.google.androidbrowserhelper.trusted.TwaLauncher mTwaLauncher -> s
     boolean sChromeVersionChecked -> t
     int getColorCompat(int) -> b
-    androidx.browser.trusted.TrustedWebActivityDisplayMode getDisplayMode() -> l
-    com.google.androidbrowserhelper.trusted.TwaLauncher$FallbackStrategy getFallbackStrategy() -> m
-    android.net.Uri getLaunchingUrl() -> n
-    android.widget.ImageView$ScaleType getSplashImageScaleType() -> o
-    android.graphics.Matrix getSplashImageTransformationMatrix() -> p
-    void lambda$onCreate$0() -> q
-    boolean restartInNewTask() -> r
-    boolean splashScreenNeeded() -> s
+    com.google.androidbrowserhelper.trusted.TwaLauncher$FallbackStrategy getFallbackStrategy() -> l
+    android.net.Uri getLaunchingUrl() -> m
+    android.widget.ImageView$ScaleType getSplashImageScaleType() -> n
+    android.graphics.Matrix getSplashImageTransformationMatrix() -> o
+    void lambda$onCreate$0() -> p
+    boolean restartInNewTask() -> q
+    boolean splashScreenNeeded() -> r
 com.google.androidbrowserhelper.trusted.LauncherActivityMetadata -> com.google.androidbrowserhelper.trusted.i:
     java.lang.String fileProviderAuthority -> h
     java.lang.String fallbackStrategyType -> k
     int splashScreenFadeOutDurationMillis -> i
-    androidx.browser.trusted.TrustedWebActivityDisplayMode displayMode -> l
     int splashImageDrawableId -> f
     java.util.List additionalTrustedOrigins -> j
     int splashScreenBackgroundColorId -> g
@@ -5684,7 +5677,6 @@ com.google.androidbrowserhelper.trusted.LauncherActivityMetadata -> com.google.a
     int navigationBarColorDarkId -> e
     int statusBarColorId -> b
     int statusBarColorDarkId -> c
-    androidx.browser.trusted.TrustedWebActivityDisplayMode getDisplayMode(android.os.Bundle) -> a
     com.google.androidbrowserhelper.trusted.LauncherActivityMetadata parse(android.content.Context) -> a
 com.google.androidbrowserhelper.trusted.SharedPreferencesTokenStore -> com.google.androidbrowserhelper.trusted.j:
     android.content.Context mContext -> a

@@ -24,6 +24,6 @@
 
     <integer name="splashScreenFadeOutDuration">300</integer>
 
-    <string name="webManifestUrl" translatable="false">https://stopstop.planetsgames.com.br/jogar/manifest.json</string>
+    <string name="webManifestUrl" translatable="false">https://www.stopstop.planetsgames.com.br/jogar/manifest.json</string>
 
 </resources>
