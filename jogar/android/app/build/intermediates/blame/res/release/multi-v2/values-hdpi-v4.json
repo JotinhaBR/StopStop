@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "F:\\RubensFlinco-PC\\Documents\\Github\\StopStop\\jogar\\android\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-hdpi-v4\\values-hdpi-v4.xml",
+            "outputFile": "C:\\Users\\dell\\Documents\\GitHub\\StopStop\\jogar\\android\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-hdpi-v4\\values-hdpi-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\RubensFlinco-PC\\.gradle\\caches\\transforms-2\\files-2.1\\cd9a11efb8824141eae6177e48d8bb33\\appcompat-1.0.2\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
+                    "source": "C:\\Users\\dell\\.gradle\\caches\\transforms-2\\files-2.1\\cd9a11efb8824141eae6177e48d8bb33\\appcompat-1.0.2\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

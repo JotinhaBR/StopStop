@@ -20,7 +20,7 @@ apply plugin: 'com.android.application'
 
 def twaManifest = [
     applicationId: 'com.wStopStop_10041742',
-    hostName: 'stopstop.planetsweb.com.br', // The domain being opened in the TWA.
+    hostName: 'stopstop.planetsgames.com.br', // The domain being opened in the TWA.
     launchUrl: '/jogar', // The start path for the TWA. Must be relative to the domain.
     name: 'StopStop - Stop, Adedonha, Adedanha', // The application name.
     launcherName: 'StopStop', // The name shown on the Android Launcher.
@@ -48,8 +48,8 @@ android {
         applicationId "com.wStopStop_10041742"
         minSdkVersion 19
         targetSdkVersion 29
-        versionCode 108
-        versionName "1.0.8"
+        versionCode 110
+        versionName "1.0.9"
 
         // The name for the application
         resValue "string", "appName", twaManifest.name
@@ -65,7 +65,7 @@ android {
             // The URL the Web Manifest for the Progressive Web App that the TWA points to. This
             // is used by Chrome OS to open the Web version of the PWA instead of the TWA, as it
             // will probably give a better user experience for non-mobile devices.
-            resValue "string", "webManifestUrl", 'https://stopstop.planetsweb.com.br/jogar/manifest.json'
+            resValue "string", "webManifestUrl", 'https://stopstop.planetsgames.com.br/jogar/manifest.json'
         
 
         // The hostname is used when building the intent-filter, so the TWA is able to
@@ -166,5 +166,5 @@ preBuild.dependsOn(generateShorcutsFile)
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation 'com.google.androidbrowserhelper:androidbrowserhelper:1.2.0'
+    implementation 'com.google.androidbrowserhelper:androidbrowserhelper:1.3.0'
 }
