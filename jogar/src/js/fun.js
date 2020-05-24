@@ -97,3 +97,23 @@ async function getHTML(file) {
 
     });
 }
+
+async function getConfigWEB() {
+    return new Promise((resolve, reject) => {
+    var requestOptions = {
+        method: 'GET',
+        redirect: 'follow'
+      };
+      
+      fetch(config.config.front.host+"/configWEB.json", requestOptions)
+        .then(response => {
+            localStorage.setItem("configWEB", btoa(JSON.stringify(response.json())));
+            resolve(response.json())
+        })
+        .catch(error => reject(error));
+    });
+}
+
+function lerConfigWEB() {
+    return JSON.parse(atob(localStorage.getItem("configWEB")))
+}
