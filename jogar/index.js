@@ -1,4 +1,4 @@
-await getConfigWEB();
+getConfigWEB();
 mudarCena('inicio');
 
 

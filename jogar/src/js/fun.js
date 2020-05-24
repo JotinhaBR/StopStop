@@ -99,21 +99,19 @@ async function getHTML(file) {
 }
 
 async function getConfigWEB() {
-    return new Promise((resolve, reject) => {
+    return new Promise(async(resolve, reject) => {
     var requestOptions = {
         method: 'GET',
         redirect: 'follow'
       };
       
-      fetch(config.config.front.host+"/configWEB.json", requestOptions)
-        .then(response => {
-            localStorage.setItem("configWEB", btoa(JSON.stringify(response.json())));
-            resolve(response.json())
+      fetch(global.config.front.host+"/configWEB.json", requestOptions)
+        .then(async(response) => {
+            var resposta = await response.json();
+            localStorage.setItem("configWEB", btoa(JSON.stringify(resposta)));
+            global.config.versao = resposta.versao;
+            resolve(resposta)
         })
         .catch(error => reject(error));
     });
-}
-
-function lerConfigWEB() {
-    return JSON.parse(atob(localStorage.getItem("configWEB")))
 }

@@ -1,12 +1,11 @@
-var lerConfigWEB = lerConfigWEB();
 var global = {
     config: {
-        versao: lerConfigWEB.versao, // A versão do aplicativo é consultada pela WEB e depois salva nessa variavel.
+        versao: "Carregando...", // A versão do aplicativo é consultada pela WEB e depois salva nessa variavel.
         // precache: true,
         precache: false,
         front: {
-            host: "https://www.stopstop.planetsgames.com.br/jogar"
-            // host: "http://localhost:5500/jogar"
+            // host: "https://www.stopstop.planetsgames.com.br/jogar"
+            host: "http://localhost:5500/jogar"
         },
     },
     jogo: {

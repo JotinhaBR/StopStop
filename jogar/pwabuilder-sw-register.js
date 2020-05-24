@@ -1,6 +1,7 @@
+var lerConfigWEB = JSON.parse(atob(localStorage.getItem("configWEB")))
+console.log(lerConfigWEB.versao);
 
-
-if ((global.config.precache) && (global.config.versao === global.config.versao)) {
+if ((global.config.precache) || (lerConfigWEB.versao === global.config.versao)) {
     // Precache ativo pode usar a serviceWorker
 
     if ("serviceWorker" in navigator) {
