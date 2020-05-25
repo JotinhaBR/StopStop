@@ -3,6 +3,7 @@ mudarCena('inicio');
 
 async function clickJogar() {
     global.jogo.letraAtualDoJogo = letraRandom();
+    shuffle(global.jogo.perguntas);
     await mudarCena('letrasRandom');
 
     setTimeout(async () => {

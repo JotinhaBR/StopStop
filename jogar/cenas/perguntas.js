@@ -1,11 +1,11 @@
 function submitFormPerguntasNaoSei() {
-    event.preventDefault();
+    try { event.preventDefault(); } catch {}
     $("#cenas_perguntas #resposta").val("NAO_SEI");
     $("#formPerguntas").submit();
 }
 
 async function submitFormPerguntas(shelf) {
-    event.preventDefault();
+    try { event.preventDefault(); } catch {}
     var formId = $(shelf).attr("id");
     var formData = getFormObj("#" + formId);
     var respostaPrimeraLetra = formData.resposta.substring(0, 1);

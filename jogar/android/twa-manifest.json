@@ -1,6 +1,6 @@
 {
   "packageId": "com.wStopStop_10041742",
-  "host": "stopstop.planetsgames.com.br",
+  "host": "www.stopstop.planetsgames.com.br",
   "name": "StopStop - Stop, Adedonha, Adedanha",
   "launcherName": "StopStop",
   "themeColor": "#F86D6D",
@@ -15,11 +15,11 @@
     "alias": "android",
     "path": "./android.keystore"
   },
-  "appVersionName": "1.0.9",
-  "appVersionCode": 109,
+  "appVersionName": "1.1.0",
+  "appVersionCode": 110,
   "shortcuts": [],
   "generatorApp": "bubblewrap-cli",
   "webManifestUrl": "https://www.stopstop.planetsgames.com.br/jogar/manifest.json",
   "fallbackType": "customtabs",
-  "appVersion": "1.0.9"
+  "appVersion": "1.1.0"
 }

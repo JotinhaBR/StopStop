@@ -5,7 +5,7 @@
 
     <!-- Values from default config. -->
     <string name="appName" translatable="false">StopStop - Stop, Adedonha, Adedanha</string>
-    <string name="assetStatements" translatable="false">[{ \"relation\": [\"delegate_permission/common.handle_all_urls\"],\"target\": {\"namespace\": \"web\", \"site\": \"https://stopstop.planetsgames.com.br\"}}]</string>
+    <string name="assetStatements" translatable="false">[{ \"relation\": [\"delegate_permission/common.handle_all_urls\"],\"target\": {\"namespace\": \"web\", \"site\": \"https://www.stopstop.planetsgames.com.br\"}}]</string>
 
     <color name="backgroundColor">#E14949</color>
     <color name="colorPrimary">#F86D6D</color>
@@ -14,8 +14,8 @@
 
     <string name="fallbackType" translatable="false">customtabs</string>
     <string name="generatorApp" translatable="false">bubblewrap-cli</string>
-    <string name="hostName" translatable="false">stopstop.planetsgames.com.br</string>
-    <string name="launchUrl" translatable="false">https://stopstop.planetsgames.com.br/jogar</string>
+    <string name="hostName" translatable="false">www.stopstop.planetsgames.com.br</string>
+    <string name="launchUrl" translatable="false">https://www.stopstop.planetsgames.com.br/jogar</string>
     <string name="launcherName" translatable="false">StopStop</string>
 
     <color name="navigationColor">#F86D6D</color>

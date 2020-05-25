@@ -1,32 +1,55 @@
 <div id="cenas_perguntas">
-</br>
-<h1 id="letraAtual" class="letraAtual center-text"></h1>
+  </br>
+  <div id="letraAtualBox">
+    <div id="letraAtualCirculo">
+      <h1 id="letraAtual" class="letraAtualTexto letraAtual"></h1>
+    </div>
+  </div>
 
-<div class="center-vertical">
+  <div class="center-vertical">
     <div class="center-text center-vertical-item">
-        <h2 class="pergunta"></h2>
+      <h2 class="pergunta"></h2>
 
-        <form onsubmit="submitFormPerguntas(this)" action="javascript:submitFormPerguntas(this)" id="formPerguntas" class="form-perguntas" autocomplete="off">
-            <div class="form-group form-inline">
-              <label for="resposta" class="sr-only">Digite sua resposta aqui!</label>
-              <input type="text" class="form-control" id="resposta" name="resposta" placeholder="Digite sua resposta aqui!" autofocus="on" autocomplete="off" required>
+      <form onsubmit="submitFormPerguntas(this)" action="javascript:submitFormPerguntas(this)" id="formPerguntas" class="form-perguntas" autocomplete="off">
+        <div class="form-group form-inline">
+          <div class="container">
+            <label for="resposta" class="sr-only">Digite sua resposta aqui!</label>
+            <input type="text" class="form-control" id="resposta" name="resposta" placeholder="Digite sua resposta aqui!" autofocus="on" autocomplete="off" required>
+            <button type="submit" class="btn btn-success"><i class="fa fa-check"></i></button>
+          </div>
+        </div>
 
-              <button type="submit" class="btn btn-success"><i class="fa fa-check"></i></button>
-            </div>
-
-            <div class="center-text">
-              <button type="button" onclick="submitFormPerguntasNaoSei(this)" class="btn btn-stopstop btn-passo">Passo <i class="fad fa-forward"></i></button>
-            </div>
-          </form>
+        <div class="center-text">
+          <button type="button" onclick="submitFormPerguntasNaoSei(this)" class="btn btn-stopstop btn-passo">Passo <i
+              class="fad fa-forward"></i></button>
+        </div>
+      </form>
 
     </div>
-</div>
+  </div>
 </div>
 
+<script src="src/js/fw/progressbar.js"></script>
 <script>
   $(document).ready(function () {
     $("#cenas_perguntas .pergunta").html(global.jogo.perguntas[global.jogo.nPerguntaAtual]);
     $("#letraAtual").html(global.jogo.letraAtualDoJogo);
     $("#cenas_perguntas #resposta").focus();
+
+
+
+
+    // Tempo para resposta da pergunta.
+
+    var progressBar = new ProgressBar.Circle('#letraAtualCirculo', {
+      color: '#F86D6D',
+      strokeWidth: 23,
+      easing: 'linear'
+    });
+
+    progressBar.animate(1, { duration: ( global.config.tempoDeRespostaPergunta * 1000) }, function () {
+      console.log('Tempo Acabou passando...');
+      submitFormPerguntasNaoSei();
+    });
   });
 </script>

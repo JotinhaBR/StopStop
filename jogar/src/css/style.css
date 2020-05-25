@@ -42,6 +42,7 @@ p, span, h1, h2, h3, h4, h5 ,h6, div {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 100%;
 }
 
 .form-linguas{
@@ -116,11 +117,16 @@ button:focus, select:focus, input:focus {
 #cenas_vitoria{
     width: 100vw;
     height: 100vh;
-    background: #f8a06d;
+    background: #121213;
+}
+
+#cenas_vitoria i{
+    color: #FFD700!important;
 }
 
 #cenas_vitoria .btn{
-    background: #f86d6d;
+    background: #fff;
+    color: #000;
 }
 
 .letraAtual{
@@ -128,13 +134,40 @@ button:focus, select:focus, input:focus {
     margin-left: auto;
     margin-right: auto;
     width: 40%;
-    border-radius: 50%;
     width: 66px;
     height: 66px;
     padding: 8px;
+    border-radius: 50%;
     border: 2px solid #fff;
     color: #fff;
     text-align: center;
+}
+
+#cenas_perguntas #letraAtualBox{
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#cenas_perguntas #letraAtualCirculo{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#cenas_perguntas #letraAtualCirculo .letraAtualTexto {
+    position: absolute;
+    color: #fff; 
+}
+  
+#cenas_perguntas #letraAtualCirculo svg {
+    height: 100%;
+    display: block;
+    z-index: 1;
 }
 
 .form-perguntas #resposta{

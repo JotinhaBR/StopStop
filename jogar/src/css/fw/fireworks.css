@@ -1,0 +1,142 @@
+:root{
+  --fc1: #f20;
+  --fc2: #ff0;
+  --fc3: #04f;
+  --fc4: #0f4;
+  --fc5: #f0f;
+  --fc: var(--fc1);
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: #000;
+  overflow: hidden; 
+}
+.fireworks:before, .fireworks:after{
+  position: absolute;
+  content: '';
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  box-shadow: -120px 0 var(--fc),
+              120px 0 var(--fc),
+              0 120px var(--fc),
+              0 -120px var(--fc),
+              45px 45px var(--fc),
+              -45px 45px var(--fc),
+              85px 85px var(--fc),
+              -85px 85px var(--fc),
+              45px -45px var(--fc),
+              -45px -45px var(--fc),
+              85px -85px var(--fc),
+              -85px -85px var(--fc),
+              65px 0 var(--fc),
+              -65px 0 var(--fc),
+              0 65px var(--fc),
+              0 -65px var(--fc),
+              100px 45px var(--fc),
+              -100px 45px var(--fc),
+              -50px 100px var(--fc),
+              50px 100px var(--fc),
+              100px -45px var(--fc),
+              -100px -45px var(--fc),
+              -50px -100px var(--fc),
+              50px -100px var(--fc),
+              5px 10px var(--fc);
+  animation: 1s bang ease-out infinite backwards, 
+              1s gravity ease-in infinite backwards, 
+              5s position linear infinite backwards;
+}
+.fireworks:after{
+  animation-delay: 1.25s, 1.25s, 1.25s;
+  animation-duration: 1.25s, 1.25s, 6.25s;
+}
+@keyframes bang {
+  from {
+      box-shadow: 0 0 #fff, 
+                  0 0 #fff, 
+                  0 0 #fff, 
+                  0 0 #fff, 
+                  0 0 #fff, 
+                  0 0 #fff, 
+                  0 0 #fff, 
+                  0 0 #fff,
+                  0 0 #fff, 
+                  0 0 #fff, 
+                  0 0 #fff, 
+                  0 0 #fff, 
+                  0 0 #fff, 
+                  0 0 #fff, 
+                  0 0 #fff, 
+                  0 0 #fff,
+                  0 0 #fff, 
+                  0 0 #fff, 
+                  0 0 #fff, 
+                  0 0 #fff, 
+                  0 0 #fff, 
+                  0 0 #fff, 
+                  0 0 #fff, 
+                  0 0 #fff,
+                  0 0 #fff; 
+  }
+}
+
+@keyframes gravity {
+  to {
+      transform: translate(-10px, 150px);
+      height: 6px;
+      width: 4px;
+      opacity: 0; 
+  }
+}
+@keyframes position {
+  0%, 19.9% {
+      margin-top: 10%;
+      margin-left: 40%;
+      --fc: var(--fc1);
+  }
+
+  20%, 39.9% {
+      margin-top: 2%;
+      margin-left: 70%; 
+      --fc: var(--fc2);
+  }
+
+  40%, 59.9% {
+      margin-top: 20%;
+      margin-left: 70%; 
+      --fc: var(--fc3);
+  }
+
+  60%, 79.9% {
+      margin-top: 30%;
+      margin-left: 20%;
+      --fc: var(--fc4);
+  }
+
+  80%, 99.9% {
+      margin-top: 30%;
+      margin-left: 80%; 
+      --fc: var(--fc5);
+  } 
+}
+.text{
+  color: #000;
+  width: 100%;
+  height: 100vh;
+  font-family: cursive;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 4rem;
+}
+.text span{
+  text-shadow: 0 0 12px #ffe0b4,
+              0 0 #ffe044,
+              0 0 5px #ffe074;
+  margin: 0;
+}
+.text span:last-child{
+  margin: 20px;
+}
