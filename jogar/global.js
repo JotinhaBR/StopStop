@@ -11,6 +11,7 @@ var global = {
         intervalLetrasRandom: null,
         letraAtualDoJogo: "A",
         nPerguntaAtual: 0,
+        progressBar: null,
         pontosAtual: 0,
         pontosTotais: 0,
         perguntas: Array(
