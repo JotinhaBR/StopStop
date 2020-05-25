@@ -8,7 +8,7 @@ async function submitFormPerguntas(shelf) {
     try { event.preventDefault(); } catch {}
     var formId = $(shelf).attr("id");
     var formData = getFormObj("#" + formId);
-    var respostaPrimeraLetra = formData.resposta.substring(0, 1);
+    try { var respostaPrimeraLetra = formData.resposta.substring(0, 1); } catch {}
     global.jogo.nPerguntaAtual++;
 
     if (formData.resposta.length >= 2) {
