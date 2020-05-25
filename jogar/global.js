@@ -1,11 +1,9 @@
 var global = {
     config: {
-        versao: "Carregando...", // A versão do aplicativo é consultada pela WEB e depois salva nessa variavel.
-        precache: true,
-        // precache: false,
+        cacheForceClear: false,
         front: {
-            host: "https://www.stopstop.planetsgames.com.br/jogar"
-            // host: "http://localhost:5500/jogar"
+            // host: "https://www.stopstop.planetsgames.com.br/jogar"
+            host: "http://localhost:5500/jogar"
         },
     },
     jogo: {

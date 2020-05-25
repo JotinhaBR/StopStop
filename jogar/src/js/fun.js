@@ -109,9 +109,22 @@ async function getConfigWEB() {
         .then(async(response) => {
             var resposta = await response.json();
             localStorage.setItem("configWEB", btoa(JSON.stringify(resposta)));
-            global.config.versao = resposta.versao;
+            console.log(resposta.versao,localStorage.getItem("ultimaVersao"));
+            if (String(resposta.versao) === String(localStorage.getItem("ultimaVersao"))) {
+                global.config.cacheForceClear = false;
+            } else {
+                localStorage.setItem("ultimaVersao", resposta.versao);
+                global.config.cacheForceClear = true;
+            }
+            console.log(resposta.versao,localStorage.getItem("ultimaVersao"),global.config.cacheForceClear);
             resolve(resposta)
         })
-        .catch(error => reject(error));
+        .catch(error => {
+            var resposta = {
+                versao: "ErroDeConexaoSemInternet"
+            }
+            localStorage.setItem("configWEB", btoa(JSON.stringify(resposta)));
+            reject(error)
+        });
     });
 }

@@ -1,4 +1,3 @@
-getConfigWEB();
 mudarCena('inicio');
 
 
