@@ -1,3 +1,6 @@
+var numeroLetraRandom = uniqueRandom(1, 25);
+
+
 async function clickRedirect(url) {
     modalAtivar("carregando");
     window.location.href = url;
@@ -13,11 +16,17 @@ async function mudarCena(nome, body = "body") {
 
 function letraRandom() {
     var letra = Array("A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "U", "V", "W", "X", "Y", "Z");
-    var numero = Math.floor(Math.random() * letra.length);
-    return letra[numero];
+    var retorno = letra[numeroLetraRandom()];
+    if (String(retorno) == "undefined") {
+        retorno = letra[numeroLetraRandom()];
+        if (String(retorno) == "undefined") {
+            retorno = letra[numeroLetraRandom()];
+        }
+    }
+    return retorno;
 }
 
-function shuffle(o) {
+function embaralhadorDeArray(o) {
   for (var j, x, i = o.length; i; j = Math.floor(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
   return o;
 }
@@ -133,3 +142,14 @@ async function getConfigWEB() {
         });
     });
 }
+
+function uniqueRandom(minimum, maximum) {
+	let previousValue;
+	return function random() {
+		const number = Math.floor(
+			(Math.random() * (maximum - minimum + 1)) + minimum
+		);
+		previousValue = number === previousValue && minimum !== maximum ? random() : number;
+		return previousValue;
+	};
+};

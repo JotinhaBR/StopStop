@@ -15,11 +15,11 @@
     "alias": "android",
     "path": "./android.keystore"
   },
-  "appVersionName": "1.1.1",
-  "appVersionCode": 111,
+  "appVersionName": "1.1.2",
+  "appVersionCode": 112,
   "shortcuts": [],
   "generatorApp": "bubblewrap-cli",
   "webManifestUrl": "https://www.stopstop.planetsgames.com.br/jogar/manifest.json",
   "fallbackType": "customtabs",
-  "appVersion": "1.1.1"
+  "appVersion": "1.1.2"
 }

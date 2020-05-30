@@ -1,6 +1,6 @@
 var global = {
     config: {
-        tempoDeRespostaPergunta: 60,
+        tempoDeRespostaPergunta: 3,
         cacheForceClear: false,
         front: {
             host: "https://www.stopstop.planetsgames.com.br/jogar"

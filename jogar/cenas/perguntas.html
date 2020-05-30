@@ -38,8 +38,6 @@
 
 
 
-
-
     // Tempo para resposta da pergunta.
     global.jogo.progressBar = new ProgressBar.Circle('#letraAtualCirculo', {
       color: '#F86D6D',
@@ -54,10 +52,12 @@
       } else {
         console.log('Tempo Acabou passando...');
         submitFormPerguntasNaoSei();
+        global.jogo.progressBarStop = false;
       }
     });
 
 
+    // Pausar o relogio anterior quando passar ou dar ok na pergunta
     $( ".btn-passo" ).click(function() {
       try {
         global.jogo.progressBarStop = true;
@@ -71,5 +71,6 @@
         global.jogo.progressBar.destroy();
       } catch (error) { }
     });
+    
   });
 </script>
