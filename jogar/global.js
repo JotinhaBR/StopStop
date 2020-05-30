@@ -12,6 +12,7 @@ var global = {
         letraAtualDoJogo: "A",
         nPerguntaAtual: 0,
         progressBar: null,
+        progressBarStop: false,
         pontosAtual: 0,
         pontosTotais: 0,
         perguntas: Array(

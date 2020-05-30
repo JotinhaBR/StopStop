@@ -39,8 +39,8 @@
 
 
 
-    // Tempo para resposta da pergunta.
 
+    // Tempo para resposta da pergunta.
     global.jogo.progressBar = new ProgressBar.Circle('#letraAtualCirculo', {
       color: '#F86D6D',
       strokeWidth: 23,
@@ -48,8 +48,28 @@
     });
 
     global.jogo.progressBar.animate(1, { duration: ( global.config.tempoDeRespostaPergunta * 1000) }, function () {
-      console.log('Tempo Acabou passando...');
-      submitFormPerguntasNaoSei();
+      if (global.jogo.progressBarStop) {
+        console.log('Tempo Acabou, porem o usuario ja respondeu essa pergunta.');
+        global.jogo.progressBarStop = false;
+      } else {
+        console.log('Tempo Acabou passando...');
+        submitFormPerguntasNaoSei();
+      }
+    });
+
+
+    $( ".btn-passo" ).click(function() {
+      try {
+        global.jogo.progressBarStop = true;
+        global.jogo.progressBar.destroy();
+      } catch (error) { }
+    });
+    $( "#formPerguntas" ).submit(function( event ) {
+      event.preventDefault();
+      try {
+        global.jogo.progressBarStop = true;
+        global.jogo.progressBar.destroy();
+      } catch (error) { }
     });
   });
 </script>

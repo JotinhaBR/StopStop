@@ -48,8 +48,8 @@ android {
         applicationId "com.wStopStop_10041742"
         minSdkVersion 19
         targetSdkVersion 29
-        versionCode 110
-        versionName "1.1.0"
+        versionCode 111
+        versionName "1.1.1"
 
         // The name for the application
         resValue "string", "appName", twaManifest.name
