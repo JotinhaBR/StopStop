@@ -24,12 +24,22 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.wStopStop_10041742"
     android:targetSandboxVersion="2"
-    android:versionCode="112"
-    android:versionName="1.1.2" >
+    android:versionCode="114"
+    android:versionName="1.1.4" >
 
     <uses-sdk
         android:minSdkVersion="19"
         android:targetSdkVersion="29" />
+
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+
+            <category android:name="android.intent.category.BROWSABLE" />
+
+            <data android:scheme="https" />
+        </intent>
+    </queries>
 
     <application
         android:allowBackup="true"
