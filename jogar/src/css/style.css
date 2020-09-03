@@ -6,6 +6,14 @@ p, span, h1, h2, h3, h4, h5 ,h6, div {
     color: #fff;
 }
 
+a{
+    cursor: pointer;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
 .logotipo {
     width: 30vh;
 }
@@ -16,6 +24,26 @@ p, span, h1, h2, h3, h4, h5 ,h6, div {
     margin-left: 25px;
     color: #fff;
     font-size: large;
+}
+
+.dificuldade-jogo-selecao{
+    width: auto;
+    display: inline-block;
+    margin-bottom: 25px;
+    color: #fff;
+    background-color: #ee5a5a;
+    border-color: #d64444;
+}
+
+.dificuldade-jogo-selecao:focus,
+.dificuldade-jogo-selecao:active{
+    color: #fff;
+    background-color: #ee5a5a;
+    border-color: #d64444;
+}
+
+.barra-de-estrelas i{
+    color: #FFD700;
 }
 
 .links-direta-baixo{
@@ -94,6 +122,31 @@ button:focus, select:focus, input:focus {
     width: 100vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.50);
+}
+
+#modal_avalie h1{
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+#modal_avalie .modal-body{
+    width: 80vw;
+    height: 80vh;
+    background-color: #ee5a5a;
+    border-radius: 20px;
+    margin-left: 10vw;
+    margin-top: 10vh;
+}
+
+.fechar-modal{
+    background: transparent;
+    border: none;
+    float: right;
+    cursor: pointer;
+}
+
+.fechar-modal i{
+    color: #fff;
 }
 
 #cenas_passou{

@@ -1,6 +1,7 @@
 var global = {
     config: {
-        tempoDeRespostaPergunta: 60,
+        nIntervaloVitoriasModalAvaliar: 5,
+        tempoDeRespostaPergunta: 30,
         cacheForceClear: false,
         front: {
             host: "https://www.stopstop.planetsgames.com.br/jogar"
@@ -22,10 +23,13 @@ var global = {
             "Animal",
             "Comida",
             "Objeto",
+            "Profissão",
             "Nome de lugares",
             "Marca",
             "Filme/Série",
-            "Meu namorado(a) é"
+            "Meu namorado(a) é",
+            "Minha sogra é",
+            "Meu sogro é"
         )
     }
 }

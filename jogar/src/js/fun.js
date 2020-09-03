@@ -11,6 +11,30 @@ async function mudarCena(nome, body = "body") {
     var res = await getHTML(global.config.front.host + '/cenas/' + nome + '.html');
     await modalDesAtivar("carregando");
     $(body).html(res);
+    if (nome == "inicio") {
+        mudarDificuldadeDoJogo();   
+    }
+    if (nome == "vitoria") {
+
+        // Contar vitorias
+        var nVitorias = localStorage.getItem("nVitorias");
+        console.log(String(nVitorias));
+        if ((String(nVitorias) == "NaN") || (String(nVitorias) == "null")) {
+            nVitorias = "1";
+            localStorage.setItem("nProximaModalAvaliar", "1");
+        }else{
+            nVitorias = parseInt(nVitorias) + 1;
+        }
+        localStorage.setItem("nVitorias", nVitorias);
+        
+        // Abrir modal de avaliação
+        setTimeout(()=>{
+            if (localStorage.getItem("nVitorias") == localStorage.getItem("nProximaModalAvaliar")) {
+                localStorage.setItem("nProximaModalAvaliar", parseInt(nVitorias)+global.config.nIntervaloVitoriasModalAvaliar)        
+                modalAtivar("avalie");
+            }
+        }, 1000);
+    }
     return;
 }
 
@@ -53,6 +77,7 @@ function modalDesAtivar(nome) {
             $("#modal_" + nome).addClass("animated fadeOut");
             $(".modal-backdrop").addClass("animated fadeOut");
             setTimeout(() => {
+                $("#modal_" + nome).modal().hide();
                 $("#modal_" + nome).modal("hide");
                 $("#modal_" + nome).remove();
                 $(".modal-backdrop").remove();
