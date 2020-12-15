@@ -3,7 +3,6 @@ mudarCena('inicio');
 
 async function clickJogar() {
     global.jogo.letraAtualDoJogo = letraRandom();
-    embaralhadorDeArray(global.jogo.perguntas);
     await mudarCena('letrasRandom');
 
     setTimeout(async () => {
@@ -13,6 +12,7 @@ async function clickJogar() {
         setTimeout(async () => {
             await mudarCena('perguntas');
             global.jogo.nPerguntaAtual = 0;
+            global.jogo.perguntas = embaralhadorDeArray(global.jogo.perguntas);
             $("#cenas_perguntas .pergunta").html(global.jogo.perguntas[0]);
             $("#letraAtual").html(global.jogo.letraAtualDoJogo);
         }, 1000);
