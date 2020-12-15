@@ -1,4 +1,4 @@
-#Thu Sep 03 05:00:17 BRT 2020
-base.0=/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+#Mon Dec 14 22:17:32 BRT 2020
+base.0=F\:\\RubensFlinco-PC\\Documents\\Github\\StopStop\\jogar\\android\\app\\build\\intermediates\\transforms\\r8\\release\\0\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

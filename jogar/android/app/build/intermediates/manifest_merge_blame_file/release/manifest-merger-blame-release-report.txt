@@ -23,206 +23,188 @@
 23-->
 24<manifest xmlns:android="http://schemas.android.com/apk/res/android"
 25    package="com.wStopStop_10041742"
-26    android:versionCode="114"
-27    android:versionName="1.1.4" >
+26    android:versionCode="115"
+27    android:versionName="1.1.5" >
 28
 29    <uses-sdk
 30        android:minSdkVersion="19"
-30-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml
+30-->F:\RubensFlinco-PC\Documents\Github\StopStop\jogar\android\app\src\main\AndroidManifest.xml
 31        android:targetSdkVersion="29" />
-31-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml
+31-->F:\RubensFlinco-PC\Documents\Github\StopStop\jogar\android\app\src\main\AndroidManifest.xml
 32
-33    <queries>
-33-->[com.google.androidbrowserhelper:androidbrowserhelper:1.3.2] /home/rubensflinco/.gradle/caches/transforms-2/files-2.1/ce3213dae9639c0fada057349098ffd4/androidbrowserhelper-1.3.2/AndroidManifest.xml:26:5-34:15
-34        <intent>
-34-->[com.google.androidbrowserhelper:androidbrowserhelper:1.3.2] /home/rubensflinco/.gradle/caches/transforms-2/files-2.1/ce3213dae9639c0fada057349098ffd4/androidbrowserhelper-1.3.2/AndroidManifest.xml:27:9-33:18
-35            <action android:name="android.intent.action.VIEW" />
-35-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml:85:17-68
-35-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml:85:25-66
-36
-37            <category android:name="android.intent.category.BROWSABLE" />
-37-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml:87:17-77
-37-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml:87:27-75
-38
-39            <data android:scheme="https" />
-39-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml:88:17-89:54
-39-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml:88:23-45
-40        </intent>
-41    </queries>
-42
-43    <application
-43-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml:27:5-121:19
-44        android:allowBackup="true"
-44-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml:28:9-35
-45        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-45-->[androidx.core:core:1.1.0] /home/rubensflinco/.gradle/caches/transforms-2/files-2.1/03736cf4bc3669a69d502627b70a527e/core-1.1.0/AndroidManifest.xml:24:18-86
-46        android:icon="@mipmap/ic_launcher"
-46-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml:29:9-43
-47        android:label="@string/appName"
-47-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml:30:9-40
-48        android:supportsRtl="true"
-48-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml:31:9-35
-49        android:theme="@style/Theme.LauncherActivity" >
-49-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml:32:9-54
-50        <meta-data
-50-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml:34:9-36:58
-51            android:name="asset_statements"
-51-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml:35:13-44
-52            android:resource="@string/assetStatements" />
-52-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml:36:13-55
-53        <meta-data
-53-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml:39:13-41:58
-54            android:name="web_manifest_url"
-54-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml:40:17-48
-55            android:value="@string/webManifestUrl" />
-55-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml:41:17-55
-56        <meta-data
-56-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml:44:9-46:52
-57            android:name="twa_generator"
-57-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml:45:13-41
-58            android:value="@string/generatorApp" />
-58-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml:46:13-49
-59
-60        <activity
-60-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml:48:9-91:20
-61            android:name="com.google.androidbrowserhelper.trusted.LauncherActivity"
-61-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml:48:19-90
-62            android:label="@string/launcherName" >
-62-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml:49:13-49
-63            <meta-data
-63-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml:50:13-51:53
-64                android:name="android.support.customtabs.trusted.DEFAULT_URL"
-64-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml:50:24-85
-65                android:value="@string/launchUrl" />
-65-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml:51:17-50
-66            <meta-data
-66-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml:53:13-55:58
-67                android:name="android.support.customtabs.trusted.STATUS_BAR_COLOR"
-67-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml:54:17-83
-68                android:resource="@color/colorPrimary" />
-68-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml:55:17-55
-69            <meta-data
-69-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml:57:13-59:61
-70                android:name="android.support.customtabs.trusted.NAVIGATION_BAR_COLOR"
-70-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml:58:17-87
-71                android:resource="@color/navigationColor" />
-71-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml:59:17-58
-72            <meta-data
-72-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml:61:13-62:54
-73                android:name="android.support.customtabs.trusted.SPLASH_IMAGE_DRAWABLE"
-73-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml:61:24-95
-74                android:resource="@drawable/splash" />
-74-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml:62:17-52
-75            <meta-data
-75-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml:64:13-65:60
-76                android:name="android.support.customtabs.trusted.SPLASH_SCREEN_BACKGROUND_COLOR"
-76-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml:64:24-104
-77                android:resource="@color/backgroundColor" />
-77-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml:65:17-58
-78            <meta-data
-78-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml:67:13-68:71
-79                android:name="android.support.customtabs.trusted.SPLASH_SCREEN_FADE_OUT_DURATION"
-79-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml:67:24-105
-80                android:value="@integer/splashScreenFadeOutDuration" />
-80-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml:68:17-69
-81            <meta-data
-81-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml:70:13-71:60
-82                android:name="android.support.customtabs.trusted.FILE_PROVIDER_AUTHORITY"
-82-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml:70:24-97
-83                android:value="@string/providerAuthority" />
-83-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml:71:17-58
-84            <meta-data
-84-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml:73:13-97
-85                android:name="android.app.shortcuts"
-85-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml:73:24-60
-86                android:resource="@xml/shortcuts" />
-86-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml:73:61-94
-87            <meta-data
-87-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml:75:13-76:56
-88                android:name="android.support.customtabs.trusted.FALLBACK_STRATEGY"
-88-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml:75:24-91
-89                android:value="@string/fallbackType" />
-89-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml:76:17-53
-90
-91            <intent-filter>
-91-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml:79:13-82:29
-92                <action android:name="android.intent.action.MAIN" />
-92-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml:80:17-69
-92-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml:80:25-66
-93
-94                <category android:name="android.intent.category.LAUNCHER" />
-94-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml:81:17-77
-94-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml:81:27-74
+33    <application
+33-->F:\RubensFlinco-PC\Documents\Github\StopStop\jogar\android\app\src\main\AndroidManifest.xml:27:5-118:19
+34        android:allowBackup="true"
+34-->F:\RubensFlinco-PC\Documents\Github\StopStop\jogar\android\app\src\main\AndroidManifest.xml:28:9-35
+35        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+35-->[androidx.core:core:1.1.0] C:\Users\RubensFlinco-PC\.gradle\caches\transforms-2\files-2.1\8dca7814ee2bb9f90ee3f0ba01d547b8\core-1.1.0\AndroidManifest.xml:24:18-86
+36        android:icon="@mipmap/ic_launcher"
+36-->F:\RubensFlinco-PC\Documents\Github\StopStop\jogar\android\app\src\main\AndroidManifest.xml:29:9-43
+37        android:label="@string/appName"
+37-->F:\RubensFlinco-PC\Documents\Github\StopStop\jogar\android\app\src\main\AndroidManifest.xml:30:9-40
+38        android:supportsRtl="true"
+38-->F:\RubensFlinco-PC\Documents\Github\StopStop\jogar\android\app\src\main\AndroidManifest.xml:31:9-35
+39        android:theme="@style/Theme.LauncherActivity" >
+39-->F:\RubensFlinco-PC\Documents\Github\StopStop\jogar\android\app\src\main\AndroidManifest.xml:32:9-54
+40        <meta-data
+40-->F:\RubensFlinco-PC\Documents\Github\StopStop\jogar\android\app\src\main\AndroidManifest.xml:34:9-36:58
+41            android:name="asset_statements"
+41-->F:\RubensFlinco-PC\Documents\Github\StopStop\jogar\android\app\src\main\AndroidManifest.xml:35:13-44
+42            android:resource="@string/assetStatements" />
+42-->F:\RubensFlinco-PC\Documents\Github\StopStop\jogar\android\app\src\main\AndroidManifest.xml:36:13-55
+43        <meta-data
+43-->F:\RubensFlinco-PC\Documents\Github\StopStop\jogar\android\app\src\main\AndroidManifest.xml:39:13-41:58
+44            android:name="web_manifest_url"
+44-->F:\RubensFlinco-PC\Documents\Github\StopStop\jogar\android\app\src\main\AndroidManifest.xml:40:17-48
+45            android:value="@string/webManifestUrl" />
+45-->F:\RubensFlinco-PC\Documents\Github\StopStop\jogar\android\app\src\main\AndroidManifest.xml:41:17-55
+46        <meta-data
+46-->F:\RubensFlinco-PC\Documents\Github\StopStop\jogar\android\app\src\main\AndroidManifest.xml:44:9-46:52
+47            android:name="twa_generator"
+47-->F:\RubensFlinco-PC\Documents\Github\StopStop\jogar\android\app\src\main\AndroidManifest.xml:45:13-41
+48            android:value="@string/generatorApp" />
+48-->F:\RubensFlinco-PC\Documents\Github\StopStop\jogar\android\app\src\main\AndroidManifest.xml:46:13-49
+49
+50        <activity
+50-->F:\RubensFlinco-PC\Documents\Github\StopStop\jogar\android\app\src\main\AndroidManifest.xml:48:9-90:20
+51            android:name="com.google.androidbrowserhelper.trusted.LauncherActivity"
+51-->F:\RubensFlinco-PC\Documents\Github\StopStop\jogar\android\app\src\main\AndroidManifest.xml:48:19-90
+52            android:label="@string/launcherName" >
+52-->F:\RubensFlinco-PC\Documents\Github\StopStop\jogar\android\app\src\main\AndroidManifest.xml:49:13-49
+53            <meta-data
+53-->F:\RubensFlinco-PC\Documents\Github\StopStop\jogar\android\app\src\main\AndroidManifest.xml:50:13-51:53
+54                android:name="android.support.customtabs.trusted.DEFAULT_URL"
+54-->F:\RubensFlinco-PC\Documents\Github\StopStop\jogar\android\app\src\main\AndroidManifest.xml:50:24-85
+55                android:value="@string/launchUrl" />
+55-->F:\RubensFlinco-PC\Documents\Github\StopStop\jogar\android\app\src\main\AndroidManifest.xml:51:17-50
+56            <meta-data
+56-->F:\RubensFlinco-PC\Documents\Github\StopStop\jogar\android\app\src\main\AndroidManifest.xml:53:13-55:58
+57                android:name="android.support.customtabs.trusted.STATUS_BAR_COLOR"
+57-->F:\RubensFlinco-PC\Documents\Github\StopStop\jogar\android\app\src\main\AndroidManifest.xml:54:17-83
+58                android:resource="@color/colorPrimary" />
+58-->F:\RubensFlinco-PC\Documents\Github\StopStop\jogar\android\app\src\main\AndroidManifest.xml:55:17-55
+59            <meta-data
+59-->F:\RubensFlinco-PC\Documents\Github\StopStop\jogar\android\app\src\main\AndroidManifest.xml:57:13-59:61
+60                android:name="android.support.customtabs.trusted.NAVIGATION_BAR_COLOR"
+60-->F:\RubensFlinco-PC\Documents\Github\StopStop\jogar\android\app\src\main\AndroidManifest.xml:58:17-87
+61                android:resource="@color/navigationColor" />
+61-->F:\RubensFlinco-PC\Documents\Github\StopStop\jogar\android\app\src\main\AndroidManifest.xml:59:17-58
+62            <meta-data
+62-->F:\RubensFlinco-PC\Documents\Github\StopStop\jogar\android\app\src\main\AndroidManifest.xml:61:13-62:54
+63                android:name="android.support.customtabs.trusted.SPLASH_IMAGE_DRAWABLE"
+63-->F:\RubensFlinco-PC\Documents\Github\StopStop\jogar\android\app\src\main\AndroidManifest.xml:61:24-95
+64                android:resource="@drawable/splash" />
+64-->F:\RubensFlinco-PC\Documents\Github\StopStop\jogar\android\app\src\main\AndroidManifest.xml:62:17-52
+65            <meta-data
+65-->F:\RubensFlinco-PC\Documents\Github\StopStop\jogar\android\app\src\main\AndroidManifest.xml:64:13-65:60
+66                android:name="android.support.customtabs.trusted.SPLASH_SCREEN_BACKGROUND_COLOR"
+66-->F:\RubensFlinco-PC\Documents\Github\StopStop\jogar\android\app\src\main\AndroidManifest.xml:64:24-104
+67                android:resource="@color/backgroundColor" />
+67-->F:\RubensFlinco-PC\Documents\Github\StopStop\jogar\android\app\src\main\AndroidManifest.xml:65:17-58
+68            <meta-data
+68-->F:\RubensFlinco-PC\Documents\Github\StopStop\jogar\android\app\src\main\AndroidManifest.xml:67:13-68:71
+69                android:name="android.support.customtabs.trusted.SPLASH_SCREEN_FADE_OUT_DURATION"
+69-->F:\RubensFlinco-PC\Documents\Github\StopStop\jogar\android\app\src\main\AndroidManifest.xml:67:24-105
+70                android:value="@integer/splashScreenFadeOutDuration" />
+70-->F:\RubensFlinco-PC\Documents\Github\StopStop\jogar\android\app\src\main\AndroidManifest.xml:68:17-69
+71            <meta-data
+71-->F:\RubensFlinco-PC\Documents\Github\StopStop\jogar\android\app\src\main\AndroidManifest.xml:70:13-71:60
+72                android:name="android.support.customtabs.trusted.FILE_PROVIDER_AUTHORITY"
+72-->F:\RubensFlinco-PC\Documents\Github\StopStop\jogar\android\app\src\main\AndroidManifest.xml:70:24-97
+73                android:value="@string/providerAuthority" />
+73-->F:\RubensFlinco-PC\Documents\Github\StopStop\jogar\android\app\src\main\AndroidManifest.xml:71:17-58
+74            <meta-data
+74-->F:\RubensFlinco-PC\Documents\Github\StopStop\jogar\android\app\src\main\AndroidManifest.xml:73:13-97
+75                android:name="android.app.shortcuts"
+75-->F:\RubensFlinco-PC\Documents\Github\StopStop\jogar\android\app\src\main\AndroidManifest.xml:73:24-60
+76                android:resource="@xml/shortcuts" />
+76-->F:\RubensFlinco-PC\Documents\Github\StopStop\jogar\android\app\src\main\AndroidManifest.xml:73:61-94
+77            <meta-data
+77-->F:\RubensFlinco-PC\Documents\Github\StopStop\jogar\android\app\src\main\AndroidManifest.xml:75:13-76:56
+78                android:name="android.support.customtabs.trusted.FALLBACK_STRATEGY"
+78-->F:\RubensFlinco-PC\Documents\Github\StopStop\jogar\android\app\src\main\AndroidManifest.xml:75:24-91
+79                android:value="@string/fallbackType" />
+79-->F:\RubensFlinco-PC\Documents\Github\StopStop\jogar\android\app\src\main\AndroidManifest.xml:76:17-53
+80
+81            <intent-filter>
+81-->F:\RubensFlinco-PC\Documents\Github\StopStop\jogar\android\app\src\main\AndroidManifest.xml:78:13-81:29
+82                <action android:name="android.intent.action.MAIN" />
+82-->F:\RubensFlinco-PC\Documents\Github\StopStop\jogar\android\app\src\main\AndroidManifest.xml:79:17-69
+82-->F:\RubensFlinco-PC\Documents\Github\StopStop\jogar\android\app\src\main\AndroidManifest.xml:79:25-66
+83
+84                <category android:name="android.intent.category.LAUNCHER" />
+84-->F:\RubensFlinco-PC\Documents\Github\StopStop\jogar\android\app\src\main\AndroidManifest.xml:80:17-77
+84-->F:\RubensFlinco-PC\Documents\Github\StopStop\jogar\android\app\src\main\AndroidManifest.xml:80:27-74
+85            </intent-filter>
+86            <intent-filter android:autoVerify="true" >
+86-->F:\RubensFlinco-PC\Documents\Github\StopStop\jogar\android\app\src\main\AndroidManifest.xml:83:13-89:29
+86-->F:\RubensFlinco-PC\Documents\Github\StopStop\jogar\android\app\src\main\AndroidManifest.xml:83:28-53
+87                <action android:name="android.intent.action.VIEW" />
+87-->F:\RubensFlinco-PC\Documents\Github\StopStop\jogar\android\app\src\main\AndroidManifest.xml:84:17-68
+87-->F:\RubensFlinco-PC\Documents\Github\StopStop\jogar\android\app\src\main\AndroidManifest.xml:84:25-66
+88
+89                <category android:name="android.intent.category.DEFAULT" />
+89-->F:\RubensFlinco-PC\Documents\Github\StopStop\jogar\android\app\src\main\AndroidManifest.xml:85:17-76
+89-->F:\RubensFlinco-PC\Documents\Github\StopStop\jogar\android\app\src\main\AndroidManifest.xml:85:27-73
+90                <category android:name="android.intent.category.BROWSABLE" />
+90-->F:\RubensFlinco-PC\Documents\Github\StopStop\jogar\android\app\src\main\AndroidManifest.xml:86:17-77
+90-->F:\RubensFlinco-PC\Documents\Github\StopStop\jogar\android\app\src\main\AndroidManifest.xml:86:27-75
+91
+92                <data
+92-->F:\RubensFlinco-PC\Documents\Github\StopStop\jogar\android\app\src\main\AndroidManifest.xml:87:17-88:54
+93                    android:host="@string/hostName"
+93-->F:\RubensFlinco-PC\Documents\Github\StopStop\jogar\android\app\src\main\AndroidManifest.xml:88:21-52
+94                    android:scheme="https" />
+94-->F:\RubensFlinco-PC\Documents\Github\StopStop\jogar\android\app\src\main\AndroidManifest.xml:87:23-45
 95            </intent-filter>
-96            <intent-filter android:autoVerify="true" >
-96-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml:84:13-90:29
-96-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml:84:28-53
-97                <action android:name="android.intent.action.VIEW" />
-97-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml:85:17-68
-97-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml:85:25-66
-98
-99                <category android:name="android.intent.category.DEFAULT" />
-99-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml:86:17-76
-99-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml:86:27-73
-100                <category android:name="android.intent.category.BROWSABLE" />
-100-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml:87:17-77
-100-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml:87:27-75
+96        </activity>
+97        <activity android:name="com.google.androidbrowserhelper.trusted.FocusActivity" />
+97-->F:\RubensFlinco-PC\Documents\Github\StopStop\jogar\android\app\src\main\AndroidManifest.xml:92:9-90
+97-->F:\RubensFlinco-PC\Documents\Github\StopStop\jogar\android\app\src\main\AndroidManifest.xml:92:19-87
+98        <activity
+98-->F:\RubensFlinco-PC\Documents\Github\StopStop\jogar\android\app\src\main\AndroidManifest.xml:94:9-95:62
+99            android:name="com.google.androidbrowserhelper.trusted.WebViewFallbackActivity"
+99-->F:\RubensFlinco-PC\Documents\Github\StopStop\jogar\android\app\src\main\AndroidManifest.xml:94:19-97
+100            android:configChanges="orientation|screenSize" />
+100-->F:\RubensFlinco-PC\Documents\Github\StopStop\jogar\android\app\src\main\AndroidManifest.xml:95:13-59
 101
-102                <data
-102-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml:88:17-89:54
-103                    android:host="@string/hostName"
-103-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml:89:21-52
-104                    android:scheme="https" />
-104-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml:88:23-45
-105            </intent-filter>
-106        </activity>
-107        <activity android:name="com.google.androidbrowserhelper.trusted.FocusActivity" />
-107-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml:93:9-90
-107-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml:93:19-87
-108        <activity
-108-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml:95:9-96:62
-109            android:name="com.google.androidbrowserhelper.trusted.WebViewFallbackActivity"
-109-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml:95:19-97
-110            android:configChanges="orientation|screenSize" />
-110-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml:96:13-59
+102        <provider
+102-->F:\RubensFlinco-PC\Documents\Github\StopStop\jogar\android\app\src\main\AndroidManifest.xml:97:9-105:20
+103            android:name="androidx.core.content.FileProvider"
+103-->F:\RubensFlinco-PC\Documents\Github\StopStop\jogar\android\app\src\main\AndroidManifest.xml:98:13-62
+104            android:authorities="@string/providerAuthority"
+104-->F:\RubensFlinco-PC\Documents\Github\StopStop\jogar\android\app\src\main\AndroidManifest.xml:99:13-60
+105            android:exported="false"
+105-->F:\RubensFlinco-PC\Documents\Github\StopStop\jogar\android\app\src\main\AndroidManifest.xml:101:13-37
+106            android:grantUriPermissions="true" >
+106-->F:\RubensFlinco-PC\Documents\Github\StopStop\jogar\android\app\src\main\AndroidManifest.xml:100:13-47
+107            <meta-data
+107-->F:\RubensFlinco-PC\Documents\Github\StopStop\jogar\android\app\src\main\AndroidManifest.xml:102:13-104:53
+108                android:name="android.support.FILE_PROVIDER_PATHS"
+108-->F:\RubensFlinco-PC\Documents\Github\StopStop\jogar\android\app\src\main\AndroidManifest.xml:103:17-67
+109                android:resource="@xml/filepaths" />
+109-->F:\RubensFlinco-PC\Documents\Github\StopStop\jogar\android\app\src\main\AndroidManifest.xml:104:17-50
+110        </provider>
 111
-112        <provider
-112-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml:98:9-106:20
-113            android:name="androidx.core.content.FileProvider"
-113-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml:99:13-62
-114            android:authorities="@string/providerAuthority"
-114-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml:100:13-60
-115            android:exported="false"
-115-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml:102:13-37
-116            android:grantUriPermissions="true" >
-116-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml:101:13-47
-117            <meta-data
-117-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml:103:13-105:53
-118                android:name="android.support.FILE_PROVIDER_PATHS"
-118-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml:104:17-67
-119                android:resource="@xml/filepaths" />
-119-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml:105:17-50
-120        </provider>
-121
-122        <service
-122-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml:108:9-119:20
-123            android:name="com.google.androidbrowserhelper.trusted.DelegationService"
-123-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml:109:13-85
-124            android:enabled="@bool/enableNotification"
-124-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml:110:13-55
-125            android:exported="@bool/enableNotification" >
-125-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml:111:13-56
-126            <intent-filter>
-126-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml:115:13-118:29
-127                <action android:name="android.support.customtabs.trusted.TRUSTED_WEB_ACTIVITY_SERVICE" />
-127-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml:116:17-105
-127-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml:116:25-103
-128
-129                <category android:name="android.intent.category.DEFAULT" />
-129-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml:86:17-76
-129-->/home/rubensflinco/Documentos/GitHub/StopStop/jogar/android/app/src/main/AndroidManifest.xml:86:27-73
-130            </intent-filter>
-131        </service>
-132    </application>
-133
-134</manifest>
+112        <service
+112-->F:\RubensFlinco-PC\Documents\Github\StopStop\jogar\android\app\src\main\AndroidManifest.xml:107:9-116:20
+113            android:name="com.google.androidbrowserhelper.trusted.DelegationService"
+113-->F:\RubensFlinco-PC\Documents\Github\StopStop\jogar\android\app\src\main\AndroidManifest.xml:108:14-86
+114            android:enabled="@bool/enableNotification"
+114-->F:\RubensFlinco-PC\Documents\Github\StopStop\jogar\android\app\src\main\AndroidManifest.xml:109:14-56
+115            android:exported="@bool/enableNotification" >
+115-->F:\RubensFlinco-PC\Documents\Github\StopStop\jogar\android\app\src\main\AndroidManifest.xml:110:14-57
+116            <intent-filter>
+116-->F:\RubensFlinco-PC\Documents\Github\StopStop\jogar\android\app\src\main\AndroidManifest.xml:112:14-115:30
+117                <action android:name="android.support.customtabs.trusted.TRUSTED_WEB_ACTIVITY_SERVICE" />
+117-->F:\RubensFlinco-PC\Documents\Github\StopStop\jogar\android\app\src\main\AndroidManifest.xml:113:18-106
+117-->F:\RubensFlinco-PC\Documents\Github\StopStop\jogar\android\app\src\main\AndroidManifest.xml:113:26-104
+118
+119                <category android:name="android.intent.category.DEFAULT" />
+119-->F:\RubensFlinco-PC\Documents\Github\StopStop\jogar\android\app\src\main\AndroidManifest.xml:85:17-76
+119-->F:\RubensFlinco-PC\Documents\Github\StopStop\jogar\android\app\src\main\AndroidManifest.xml:85:27-73
+120            </intent-filter>
+121        </service>
+122    </application>
+123
+124</manifest>
