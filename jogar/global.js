@@ -15,7 +15,7 @@ var global = {
         progressBar: null,
         progressBarStop: false,
         pontosAtual: 0,
-        pontosTotais: 0,
+        pontosTotais: localStorage.getItem("pontosTotais") || 0,
         perguntas: Array(
             "Nome",
             "Cor",

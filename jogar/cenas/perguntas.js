@@ -13,7 +13,7 @@ async function submitFormPerguntas(shelf) {
 
     if (formData.resposta.length >= 2) {
         if (formData.resposta === "NAO_SEI") {
-            if (global.jogo.nPerguntaAtual >= global.jogo.perguntas.length) {
+            if (global.jogo.nPerguntaAtual >= 5) {
                 //  Clicou em não sei, vitoriaa
                 global.jogo.pontosAtual = global.jogo.pontosAtual + 1;
                 await mudarCena('vitoria');
@@ -33,7 +33,7 @@ async function submitFormPerguntas(shelf) {
                 }
         } else
             if (respostaPrimeraLetra.toUpperCase() === global.jogo.letraAtualDoJogo.toUpperCase()) {
-                if (global.jogo.nPerguntaAtual >= global.jogo.perguntas.length) {
+                if (global.jogo.nPerguntaAtual >= 5) {
                     // Vitoriaa
                     global.jogo.pontosAtual = global.jogo.pontosAtual + 10;
                     await mudarCena('vitoria');

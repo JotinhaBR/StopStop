@@ -26,6 +26,7 @@ if (global.config.precache) {
     global.config.front.host + "/modals/carregando.html",
     global.config.front.host + "/cenas/acertou.html",
     global.config.front.host + "/cenas/erro.html",
+    global.config.front.host + "/cenas/passou.html",
     global.config.front.host + "/cenas/inicio.html",
     global.config.front.host + "/cenas/letrasRandom.html",
     global.config.front.host + "/cenas/perguntas.html",

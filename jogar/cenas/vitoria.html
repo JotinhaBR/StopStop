@@ -12,11 +12,33 @@
 </div>
 
 <script>
-$(document).ready(function () {
-  $("#cenas_vitoria h1").html();
-  $("#cenas_vitoria p").html();
-  $("#cenas_vitoria #pontos").html(global.jogo.pontosAtual);
-  $("#cenas_vitoria .conteudoAdd").html();
-  global.jogo.pontosTotais = global.jogo.pontosTotais + global.jogo.pontosAtual;
-});
+  $(document).ready(function () {
+    $("#cenas_vitoria h1").html();
+    $("#cenas_vitoria p").html();
+    $("#cenas_vitoria #pontos").html(global.jogo.pontosAtual);
+    $("#cenas_vitoria .conteudoAdd").html();
+
+
+    global.jogo.pontosTotais = parseInt(global.jogo.pontosTotais) + parseInt(global.jogo.pontosAtual);
+    localStorage.setItem('pontosTotais', global.jogo.pontosTotais);
+
+    // Contar vitorias
+    var nVitorias = localStorage.getItem("nVitorias");
+    console.log(String(nVitorias));
+    if ((String(nVitorias) == "NaN") || (String(nVitorias) == "null")) {
+      nVitorias = "1";
+      localStorage.setItem("nProximaModalAvaliar", "1");
+    } else {
+      nVitorias = parseInt(nVitorias) + 1;
+    }
+    localStorage.setItem("nVitorias", nVitorias);
+
+    // Abrir modal de avaliação
+    setTimeout(() => {
+      if (localStorage.getItem("nVitorias") == localStorage.getItem("nProximaModalAvaliar")) {
+        localStorage.setItem("nProximaModalAvaliar", parseInt(nVitorias) + global.config.nIntervaloVitoriasModalAvaliar)
+        modalAtivar("avalie");
+      }
+    }, 1000);
+  });
 </script>

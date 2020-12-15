@@ -1,4 +1,9 @@
 <div id="cenas_passou">
+  <div class="center-text">
+      <br />
+      <span>Pontos: <span id="pontos"> </span> </span>
+  </div>
+
   <div class="center-vertical">
     <div class="center-text center-vertical-item">
       <i class="fad fa-forward fa-3x animated bounceInLeft" style="color: #fff"></i>
@@ -14,5 +19,6 @@ $(document).ready(function () {
   $("#cenas_passou h1").html();
   $("#cenas_passou p").html();
   $("#cenas_passou .conteudoAdd").html();
+  $("#cenas_passou #pontos").html(global.jogo.pontosAtual);
 });
 </script>
